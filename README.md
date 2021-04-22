@@ -4,7 +4,7 @@ This sample is a React template for [Azure Cognitive Search](https://docs.micros
 
 You can view the resulting web application here: [https://victorious-beach-0ab88b51e.azurestaticapps.net/](https://victorious-beach-0ab88b51e.azurestaticapps.net/)
 
-![Screenshot of sample web app](./images/web-app.png)
+![Screenshot of sample web app](./images/web-app.png)  sds
 
 You can easily deploy the sample onto Azure or run it locally by following the steps below.
 
