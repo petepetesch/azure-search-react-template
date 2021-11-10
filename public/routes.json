@@ -27,10 +27,12 @@
       {
         "route": "/home",
         "serve": "/",
-        "statusCode": 301
+        "statusCode": 301,
+        "allowedRoles": ["authenticated"]
       },
       { 
-        "route": "/search" 
+        "route": "/search" ,
+        "allowedRoles": ["authenticated"]
       },
       { 
         "route": "/api/search" 
