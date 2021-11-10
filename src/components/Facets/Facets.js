@@ -28,7 +28,7 @@ export default function Facets(props) {
 
     var facets;
     try{
-        facets = Object.keys(props.facets).map(key => {
+        facets = Object.keys(props.facets).sort().map(key => {
             return <CheckboxFacet 
                 key={key}
                 name={key} 
