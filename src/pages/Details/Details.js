@@ -43,7 +43,7 @@ export default function Details() {
         <div 
         className="card-body">
         
-      {/*} <h5 className="card-title"> <b> {document.id} </b> </h5> */}
+      {/*} <h5 className="card-title"> <b> {document.id} </b> </h5> */} 
        <h6 className="card-title">  <b> Product Area: </b> {document.ProductArea} </h6>
        <h6 classname="card-tile"> <b> Product SubArea: </b>  {document.ProductSubArea}  </h6>
        <p className="card-text"><b> FeatureID: </b> {document.FeatureID}</p>
