@@ -12,19 +12,7 @@
         "route": "/.auth/login/github",
         "statusCode": "404"
       },
-      {
-        "route": "/.auth/login/google",
-        "statusCode": "404"
-      },
-      {
-        "route": "/.auth/login/facebook",
-        "statusCode": "404"
-      },
-      {
-        "route": "/.auth/login/twitter",
-        "statusCode": "404"
-      },
-      {
+       {
         "route": "/home",
         "serve": "/",
         "statusCode": 301,
@@ -35,7 +23,8 @@
         "allowedRoles": ["authenticated"]
       },
       { 
-        "route": "/api/search" 
+        "route": "/api/search" ,
+        "allowedRoles": ["authenticated"]
       },
       { 
         "route": "/api/lookup" 
@@ -44,7 +33,8 @@
         "route": "/api/suggest" 
       },
       { 
-        "route": "/details/*" 
+        "route": "/details/*" ,
+        "allowedRoles": ["authenticated"]
       },
       {
         "route": "/*",
