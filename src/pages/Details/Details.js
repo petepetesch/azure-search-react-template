@@ -39,14 +39,28 @@ export default function Details() {
     if (selectedTab === 0) {
       resultStyle += " active";
       detailsBody = (
-        <div className="card-body">
-          <h5 className="card-title">{document.original_title}</h5>
-          <img className="image" src={document.image_url} alt="Book cover"></img>
-          <p className="card-text">{document.authors?.join('; ')} - {document.original_publication_year}</p>
-          <p className="card-text">ISBN {document.isbn}</p>
-          <Rating name="half-rating-read" value={parseInt(document.average_rating)} precision={0.1} readOnly></Rating>
-          <p className="card-text">{document.ratings_count} Ratings</p>
-        </div>
+        
+        <div 
+        className="card-body">
+        
+      {/*} <h5 className="card-title"> <b> {document.id} </b> </h5> */}
+       <h6 className="card-title">  <b> Product Area: </b> {document.ProductArea} </h6>
+       <h6 classname="card-tile"> <b> Product SubArea: </b>  {document.ProductSubArea}  </h6>
+       <p className="card-text"><b> FeatureID: </b> {document.FeatureID}</p>
+       <p className="card-text"> <b>Feature Title:  {document.FeatureTitle} </b> </p>
+       <p className="card-text"> <b>Status: </b>  {document.Status}</p>
+       <p className="card-text"> <b>Keywords: </b>  {document.Keywords}</p>
+       <p className="card-text"><b> Feature Description: </b> {document.FeatureDescription}</p>
+       <p className="card-text"><b> Feature Status: </b> {document.Status}</p>
+       <script> 
+         {/* PBI Link fix needs to go here */}
+         {PBIlink = PBIlink + document.FeatureID + "%27"}
+         {/* {console.log("got to PBI link fix")}
+         {console.log("PBI link is " + PBIlink)} */}
+       </script>
+       <p className="card-text">  <a href={PBIlink}>PowerBI Link to Feature Details</a> </p>
+       <p className="card-text"> <a href={document.CRMLink}>CRM Link</a></p>
+       </div>
       );
     }
 
