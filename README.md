@@ -4,7 +4,7 @@ This sample is a React template for [Azure Cognitive Search](https://docs.micros
 
 You can view the resulting web application here: [https://victorious-beach-0ab88b51e.azurestaticapps.net/](https://victorious-beach-0ab88b51e.azurestaticapps.net/)
 
-![Screenshot of sample web app](./images/web-app.png)  sds
+![Screenshot of sample web app](./images/web-app.png)
 
 You can easily deploy the sample onto Azure or run it locally by following the steps below.
 
@@ -39,7 +39,7 @@ For this sample, there is a search index using the [goodbooks-10k dataset](https
     "SearchApiKey": "03097125077C18172260E41153975439",
     "SearchServiceName": "azs-playground",
     "SearchIndexName": "good-books",
-    "SearchFacets": "authors*,language_code"
+    "SearchFacets": "npm"
   }
 }
 ```
