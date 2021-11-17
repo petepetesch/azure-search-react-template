@@ -31,8 +31,10 @@ export default function Results(props) {
                   <th>Feature Title</th>
                   <th>Feature Description</th>
                   <th>Status</th>
-                  <th>CRM Link</th>
                   <th>PowerBI Link</th>
+                  <th>CRM Link</th>
+                  <th>Keywords</th>
+                  
                   </tr>
               </thead>
               <tbody>
