@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
-import Rating from '@material-ui/lab/Rating';
+//import Rating from '@material-ui/lab/Rating';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import axios from 'axios';
 
