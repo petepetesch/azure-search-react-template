@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 // router dom is important
-
+/* close to release of UAT for V2 */
 import SearchBar from '../../components/SearchBar/SearchBar';
 
 import "./Home.css";
