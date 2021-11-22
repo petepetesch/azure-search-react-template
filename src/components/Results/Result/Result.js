@@ -27,8 +27,8 @@ export default function Result(props) {
         <td>{props.document.FeatureDescription}</td>
         <td>{props.document.Status}</td>
         <td><a href={PBIlink+ props.document.FeatureID + "%27"}>PowerBI</a></td>
-        <td><a href={props.document.CRMLink}>CRM</a></td>
-        <td><a href={props.document.Keywords}>CRM</a></td>
+        <td><a href={props.document.CRMLink}>CRMLink</a></td>
+        <td>{props.document.Keywords}</td>
     </tr>
     // </a>
     
