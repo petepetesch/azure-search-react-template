@@ -2,19 +2,19 @@
     "routes": [
       {
         "route": "/logout",
-        "serve": "/.auth/logout"
+        "redirect": "/.auth/logout"
       },
       {
         "route": "/login",
-        "serve": "/.auth/login/aad"
+        "redirect": "/.auth/login/aad"
       },
       {
         "route": "/.auth/login/github",
-        "statusCode": "404"
+        "redirect": "404"
       },
        {
         "route": "/home",
-        "serve": "/",
+        "rewrite": "/",
         "statusCode": 301,
         "allowedRoles": ["authenticated"]
       },
@@ -40,20 +40,24 @@
       },
       {
         "route": "/*",
-        "serve": "/",
+        "rewrite": "/",
         "statusCode": 200,
         "allowedRoles": ["authenticated"]
       }
     ],
-    "platformErrorOverrides": [
-      {
-        "errorType": "Unauthenticated",
-        "serve": "/login"
-      },
-      {
-        "errorType": "NotFound",
-        "serve": "/index.html",
-        "statusCode": 200
-      }
-    ]
+    "responseOverrides": { 
+      "400": {
+      "rewrite": "/invalid-invitation-error.html"
+    },
+    "401": {
+      "redirect": "/login",
+      "statusCode": 302
+    },
+    "403": {
+      "rewrite": "/custom-forbidden-page.html"
+    },
+    "404": {
+      "rewrite": "/404.html"
+    }
+  }
   }
