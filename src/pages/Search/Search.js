@@ -10,6 +10,8 @@ import SearchBar from '../../components/SearchBar/SearchBar';
 
 import "./Search.css";
 
+// import changed facets to enable multi-select from here - https://github.com/dereklegenzoff/azure-search-retail/blob/main/src/pages/Search/Search.js
+
 export default function Search() {
   
   let location = useLocation();
@@ -24,7 +26,7 @@ export default function Search() {
   const [ filters, setFilters ] = useState([]);
   const [ facets, setFacets ] = useState({});
   const [ isLoading, setIsLoading ] = useState(true);
-
+  
   let resultsPerPage = top;
   
   useEffect(() => {
@@ -36,6 +38,8 @@ export default function Search() {
       skip: skip,
       filters: filters
     };
+
+// post code from current search.js here to enable facets refresh logic control
 
     axios.post( '/api/search', body)
         .then( response => {
