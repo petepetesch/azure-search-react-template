@@ -41,7 +41,6 @@
       {
         "route": "/*",
         "rewrite": "/",
-        "statusCode": 200,
         "allowedRoles": ["authenticated"]
       }
     ],
