@@ -15,7 +15,6 @@
        {
         "route": "/home",
         "rewrite": "/",
-        "statusCode": 301,
         "allowedRoles": ["authenticated"]
       },
       { 
