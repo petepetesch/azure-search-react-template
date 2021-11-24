@@ -39,7 +39,6 @@
       },
       {
         "route": "/*",
-        "rewrite": "/",
         "allowedRoles": ["authenticated"]
       }
     ],
