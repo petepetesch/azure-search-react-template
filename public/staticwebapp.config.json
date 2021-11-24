@@ -14,15 +14,15 @@
       },
        {
         "route": "/home",
-        "allowedRoles": ["anonymous"]
+        "allowedRoles": ["authenticated"]
       },
       { 
         "route": "/search" ,
-        "allowedRoles": ["anonymous"]
+        "allowedRoles": ["authenticated"]
       },
       { 
         "route": "/api/search" ,
-        "allowedRoles": ["anonymous"]
+        "allowedRoles": ["authenticated"]
       },
       { 
         "route": "/api/lookup" ,
