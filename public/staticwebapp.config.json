@@ -19,7 +19,7 @@
       },
       { 
         "route": "/search" ,
-        "allowedRoles": ["authenticated"]
+        "allowedRoles": ["anonymous"]
       },
       { 
         "route": "/api/search" ,
