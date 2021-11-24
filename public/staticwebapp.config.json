@@ -2,15 +2,15 @@
     "routes": [
       {
         "route": "/logout",
-        "redirect": "/.auth/logout"
+        "rewrite": "/.auth/logout"
       },
       {
         "route": "/login",
-        "redirect": "/.auth/login/aad"
+        "rewrite": "/.auth/login/aad"
       },
       {
         "route": "/.auth/login/github",
-        "redirect": "404"
+        "rewrite": "404"
       },
        {
         "route": "/home",
