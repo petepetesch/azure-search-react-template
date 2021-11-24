@@ -15,7 +15,7 @@
        {
         "route": "/home",
         "rewrite": "/",
-        "allowedRoles": ["authenticated"]
+        "allowedRoles": ["anonymous"]
       },
       { 
         "route": "/search" ,
